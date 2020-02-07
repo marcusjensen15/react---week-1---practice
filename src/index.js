@@ -1,8 +1,12 @@
 var greeting = React.createElement('h1', {}, 'Hello, World!');
+var clock = React.createElement('h2', {}, `It is ${new Date().toLocaleTimeString()}`);
+var app = React.createElement('div', {}, greeting, clock);
+
+
 
 // first we are telling it what to render 'greeting' in this case. next we tell it where to render it.
 
 ReactDOM.render(
-greeting,
+  app,
   document.getElementById('react-app-root')
 );
