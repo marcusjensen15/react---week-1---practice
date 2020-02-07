@@ -1,7 +1,10 @@
-function liveTime(){
+
 
 var heading = React.createElement('h1', {}, 'Help Queue');
-var app = React.createElement('div', {}, greeting, clock);
+var ticketLocation = React.createElement('h2', {}, "3B");
+var ticketNames = React.createElement('h2', {}, "Miguel and Monica");
+var ticketIssue = React.createElement('h2', {}, "app doesn't work");
+var app = React.createElement('div', {}, heading, ticketLocation, ticketNames, ticketIssue);
 
 
 
@@ -11,5 +14,3 @@ ReactDOM.render(
   app,
   document.getElementById('react-app-root')
 );
-
-}
